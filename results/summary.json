@@ -1,0 +1,308 @@
+{
+  "vcdb_commit": "f6f98c00f66ab35f5b49977a5852ce94a5bb31d1",
+  "cohort": 9284,
+  "development": 7438,
+  "evaluation": 1846,
+  "development_determined": 4941,
+  "evaluation_determined": 1133,
+  "mbi_rate_development": 0.26735478648046956,
+  "mbi_rate_evaluation": 0.6293027360988526,
+  "kb_coverage": 0.9744722102542007,
+  "profiles": 18,
+  "selected_params": {
+    "Threat frequency (pooled)": {
+      "lam_size": 1.0,
+      "lam_global": null,
+      "half_life": null
+    },
+    "Threat frequency (context)": {
+      "lam_size": 0.25,
+      "lam_global": 1.0,
+      "half_life": 0.5
+    },
+    "Impact-aligned (pooled)": {
+      "lam_size": 1.0,
+      "lam_global": null,
+      "half_life": null
+    },
+    "KB-CIDS w/o context": {
+      "lam_size": 1.0,
+      "lam_global": null,
+      "half_life": 1
+    },
+    "KB-CIDS w/o recency": {
+      "lam_size": 1.0,
+      "lam_global": 0.5,
+      "half_life": null
+    },
+    "KB-CIDS w/o AI imputation": {
+      "lam_size": 0.25,
+      "lam_global": 0.2,
+      "half_life": 1
+    },
+    "KB-CIDS (full)": {
+      "lam_size": 1.0,
+      "lam_global": 0.5,
+      "half_life": 1
+    }
+  },
+  "table1": [
+    {
+      "Model": "Historical lookup (action category)",
+      "ROC-AUC": 0.6789638015093835,
+      "ROC-AUC CI": "[0.647, 0.710]",
+      "PR-AUC": 0.7585772250270061,
+      "PR-AUC CI": "[0.728, 0.791]",
+      "Brier": 0.28780662166530646,
+      "Brier CI": "[0.273, 0.303]",
+      "ECE": 0.2697831298970319,
+      "ECE CI": "[0.246, 0.298]",
+      "dAUC vs proposed": -0.2123947571312476,
+      "p (paired bootstrap)": 0.0005
+    },
+    {
+      "Model": "Knowledge rules (expert, calibrated)",
+      "ROC-AUC": 0.8329326120349965,
+      "ROC-AUC CI": "[0.810, 0.856]",
+      "PR-AUC": 0.8614114583837068,
+      "PR-AUC CI": "[0.840, 0.882]",
+      "Brier": 0.19443260339993096,
+      "Brier CI": "[0.183, 0.206]",
+      "ECE": 0.18798074320167582,
+      "ECE CI": "[0.166, 0.212]",
+      "dAUC vs proposed": -0.058423659974376776,
+      "p (paired bootstrap)": 0.0005
+    },
+    {
+      "Model": "Logistic regression",
+      "ROC-AUC": 0.8488412475789755,
+      "ROC-AUC CI": "[0.827, 0.871]",
+      "PR-AUC": 0.9056610304961192,
+      "PR-AUC CI": "[0.887, 0.923]",
+      "Brier": 0.18925359549781173,
+      "Brier CI": "[0.176, 0.202]",
+      "ECE": 0.1808511017153423,
+      "ECE CI": "[0.159, 0.204]",
+      "dAUC vs proposed": -0.042397097038166534,
+      "p (paired bootstrap)": 0.0005
+    },
+    {
+      "Model": "Random forest",
+      "ROC-AUC": 0.8653042142523207,
+      "ROC-AUC CI": "[0.844, 0.887]",
+      "PR-AUC": 0.9147223524174919,
+      "PR-AUC CI": "[0.897, 0.930]",
+      "Brier": 0.17640109667944912,
+      "Brier CI": "[0.166, 0.187]",
+      "ECE": 0.17961541725670144,
+      "ECE CI": "[0.159, 0.201]",
+      "dAUC vs proposed": -0.026066849226794784,
+      "p (paired bootstrap)": 0.0005
+    },
+    {
+      "Model": "Gradient boosting",
+      "ROC-AUC": 0.8828457890870232,
+      "ROC-AUC CI": "[0.864, 0.902]",
+      "PR-AUC": 0.9275048797757139,
+      "PR-AUC CI": "[0.911, 0.942]",
+      "Brier": 0.1501081658500263,
+      "Brier CI": "[0.138, 0.162]",
+      "ECE": 0.1179812111534176,
+      "ECE CI": "[0.098, 0.139]",
+      "dAUC vs proposed": -0.008586379019677754,
+      "p (paired bootstrap)": 0.001
+    },
+    {
+      "Model": "KB-CIDS risk model (GB + knowledge, calibrated)",
+      "ROC-AUC": 0.8914779937220327,
+      "ROC-AUC CI": "[0.873, 0.911]",
+      "PR-AUC": 0.9320890340826573,
+      "PR-AUC CI": "[0.915, 0.946]",
+      "Brier": 0.15085496499577478,
+      "Brier CI": "[0.139, 0.162]",
+      "ECE": 0.13007802488193243,
+      "ECE CI": "[0.111, 0.152]",
+      "dAUC vs proposed": NaN,
+      "p (paired bootstrap)": NaN
+    }
+  ],
+  "table2": [
+    {
+      "Strategy": "Equal allocation",
+      "Mean BIRR": 0.5,
+      "BIRR 95% CI": "[0.500, 0.500]",
+      "Delta vs equal (pp)": 0.0,
+      "Oracle gap closed (%)": 0.0,
+      "Profiles better than equal": 0,
+      "Wilcoxon p vs equal": NaN,
+      "Wilcoxon p vs KB-CIDS": 7.62939453125e-06
+    },
+    {
+      "Strategy": "Threat frequency (pooled)",
+      "Mean BIRR": 0.44325379394928655,
+      "BIRR 95% CI": "[0.424, 0.461]",
+      "Delta vs equal (pp)": -5.674620605071345,
+      "Oracle gap closed (%)": -36.395074357235984,
+      "Profiles better than equal": 6,
+      "Wilcoxon p vs equal": 0.0182342529296875,
+      "Wilcoxon p vs KB-CIDS": 7.62939453125e-06
+    },
+    {
+      "Strategy": "Threat frequency (context)",
+      "Mean BIRR": 0.48340279066580916,
+      "BIRR 95% CI": "[0.468, 0.498]",
+      "Delta vs equal (pp)": -1.6597209334190843,
+      "Oracle gap closed (%)": -10.64488200851081,
+      "Profiles better than equal": 8,
+      "Wilcoxon p vs equal": 0.32472991943359375,
+      "Wilcoxon p vs KB-CIDS": 7.62939453125e-06
+    },
+    {
+      "Strategy": "Impact-aligned (pooled)",
+      "Mean BIRR": 0.5525204829021735,
+      "BIRR 95% CI": "[0.537, 0.566]",
+      "Delta vs equal (pp)": 5.252048290217348,
+      "Oracle gap closed (%)": 33.684840159961894,
+      "Profiles better than equal": 15,
+      "Wilcoxon p vs equal": 0.00193023681640625,
+      "Wilcoxon p vs KB-CIDS": 7.62939453125e-06
+    },
+    {
+      "Strategy": "KB-CIDS w/o context",
+      "Mean BIRR": 0.5853063827136573,
+      "BIRR 95% CI": "[0.574, 0.596]",
+      "Delta vs equal (pp)": 8.530638271365731,
+      "Oracle gap closed (%)": 54.71259416419353,
+      "Profiles better than equal": 18,
+      "Wilcoxon p vs equal": 7.62939453125e-06,
+      "Wilcoxon p vs KB-CIDS": 0.0736846923828125
+    },
+    {
+      "Strategy": "KB-CIDS w/o recency",
+      "Mean BIRR": 0.5665488100658251,
+      "BIRR 95% CI": "[0.556, 0.577]",
+      "Delta vs equal (pp)": 6.654881006582514,
+      "Oracle gap closed (%)": 42.68212906721416,
+      "Profiles better than equal": 16,
+      "Wilcoxon p vs equal": 0.0001068115234375,
+      "Wilcoxon p vs KB-CIDS": 2.288818359375e-05
+    },
+    {
+      "Strategy": "KB-CIDS w/o AI imputation",
+      "Mean BIRR": 0.598829697727641,
+      "BIRR 95% CI": "[0.586, 0.610]",
+      "Delta vs equal (pp)": 9.882969772764106,
+      "Oracle gap closed (%)": 63.38598556326622,
+      "Profiles better than equal": 18,
+      "Wilcoxon p vs equal": 7.62939453125e-06,
+      "Wilcoxon p vs KB-CIDS": 0.00032806396484375
+    },
+    {
+      "Strategy": "KB-CIDS (full)",
+      "Mean BIRR": 0.588016359087885,
+      "BIRR 95% CI": "[0.577, 0.599]",
+      "Delta vs equal (pp)": 8.801635908788496,
+      "Oracle gap closed (%)": 56.450680258587646,
+      "Profiles better than equal": 18,
+      "Wilcoxon p vs equal": 7.62939453125e-06,
+      "Wilcoxon p vs KB-CIDS": NaN
+    },
+    {
+      "Strategy": "Oracle (ex post)",
+      "Mean BIRR": 0.6559172691714292,
+      "BIRR 95% CI": "[0.642, 0.669]",
+      "Delta vs equal (pp)": 15.591726917142923,
+      "Oracle gap closed (%)": 100.0,
+      "Profiles better than equal": 18,
+      "Wilcoxon p vs equal": 7.62939453125e-06,
+      "Wilcoxon p vs KB-CIDS": 7.62939453125e-06
+    }
+  ],
+  "robustness": {
+    "Main specification": {
+      "Equal allocation": 0.5,
+      "Threat frequency (pooled)": 0.44325379394928655,
+      "Threat frequency (context)": 0.48340279066580916,
+      "Impact-aligned (pooled)": 0.5525204829021735,
+      "KB-CIDS w/o context": 0.5853063827136573,
+      "KB-CIDS w/o recency": 0.5665488100658251,
+      "KB-CIDS w/o AI imputation": 0.598829697727641,
+      "KB-CIDS (full)": 0.588016359087885,
+      "Oracle (ex post)": 0.6559172691714292,
+      "KB-CIDS gap closed (%)": 56.450680258587646,
+      "Profiles": 18,
+      "p (KB-CIDS vs threat frequency)": 7.62939453125e-06
+    },
+    "Record threshold 100,000": {
+      "Equal allocation": 0.5,
+      "Threat frequency (pooled)": 0.43260013432928457,
+      "Threat frequency (context)": 0.4765598323746101,
+      "Impact-aligned (pooled)": 0.5920536521212653,
+      "KB-CIDS w/o context": 0.610977040313596,
+      "KB-CIDS w/o recency": 0.6009107496474733,
+      "KB-CIDS w/o AI imputation": 0.613985854465422,
+      "KB-CIDS (full)": 0.6145324483438598,
+      "Oracle (ex post)": 0.671491184277605,
+      "KB-CIDS gap closed (%)": 66.78620176676718,
+      "Profiles": 17,
+      "p (KB-CIDS vs threat frequency)": 1.52587890625e-05
+    },
+    "Excluding non-random sub-sources": {
+      "Equal allocation": 0.5,
+      "Threat frequency (pooled)": 0.3578946007015478,
+      "Threat frequency (context)": 0.4213764338671829,
+      "Impact-aligned (pooled)": 0.4821176954012026,
+      "KB-CIDS w/o context": 0.5444354128096476,
+      "KB-CIDS w/o recency": 0.5280003918407657,
+      "KB-CIDS w/o AI imputation": 0.5533760471044189,
+      "KB-CIDS (full)": 0.5496139873111241,
+      "Oracle (ex post)": 0.6446449936329757,
+      "KB-CIDS gap closed (%)": 34.30052161847741,
+      "Profiles": 8,
+      "p (KB-CIDS vs threat frequency)": 0.0078125
+    },
+    "Split year 2015": {
+      "Equal allocation": 0.5,
+      "Threat frequency (pooled)": 0.4254712673683378,
+      "Threat frequency (context)": 0.4574712186636741,
+      "Impact-aligned (pooled)": 0.5204503812212898,
+      "KB-CIDS w/o context": 0.5626180785862414,
+      "KB-CIDS w/o recency": 0.5517933579107529,
+      "KB-CIDS w/o AI imputation": 0.5544997230261961,
+      "KB-CIDS (full)": 0.5654615959707509,
+      "Oracle (ex post)": 0.6435954466009187,
+      "KB-CIDS gap closed (%)": 45.58751514780416,
+      "Profiles": 20,
+      "p (KB-CIDS vs threat frequency)": 9.5367431640625e-06
+    },
+    "Split year 2017": {
+      "Equal allocation": 0.5,
+      "Threat frequency (pooled)": 0.44270995867480567,
+      "Threat frequency (context)": 0.48755363807567564,
+      "Impact-aligned (pooled)": 0.5701339804887717,
+      "KB-CIDS w/o context": 0.5935579543486228,
+      "KB-CIDS w/o recency": 0.573287194804993,
+      "KB-CIDS w/o AI imputation": 0.6171844972118956,
+      "KB-CIDS (full)": 0.603833850617125,
+      "Oracle (ex post)": 0.6592596529714001,
+      "KB-CIDS gap closed (%)": 65.19783804613184,
+      "Profiles": 16,
+      "p (KB-CIDS vs threat frequency)": 9.1552734375e-05
+    },
+    "Profiles with >= 5 material incidents": {
+      "Equal allocation": 0.5,
+      "Threat frequency (pooled)": 0.4375059617538535,
+      "Threat frequency (context)": 0.47845048734703666,
+      "Impact-aligned (pooled)": 0.5509601632631836,
+      "KB-CIDS w/o context": 0.5855018519521077,
+      "KB-CIDS w/o recency": 0.5660673691257174,
+      "KB-CIDS w/o AI imputation": 0.5990086616331419,
+      "KB-CIDS (full)": 0.5880408393457176,
+      "Oracle (ex post)": 0.6648876800868749,
+      "KB-CIDS gap closed (%)": 53.3944314695502,
+      "Profiles": 22,
+      "p (KB-CIDS vs threat frequency)": 4.76837158203125e-07
+    }
+  },
+  "runtime_s": 400.4
+}
