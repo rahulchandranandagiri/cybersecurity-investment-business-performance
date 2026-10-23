@@ -1,0 +1,28 @@
+family,pattern,share_of_family_risk
+F1,hacking:Unknown,0.6241573175671468
+F1,hacking:Use of stolen creds,0.09012293182490441
+F1,hacking:Unknown + malware:Ransomware,0.0568531477128566
+F2,hacking:Unknown,0.6201075450433874
+F2,error:Misconfiguration,0.0930917468699088
+F2,hacking:SQLi,0.07035007423399099
+F3,social:Phishing,0.20444247692142076
+F3,malware:Ransomware + social:Phishing,0.188734721871395
+F3,malware:Unknown + social:Phishing,0.10505169045853673
+F4,malware:Ransomware,0.3425122348734425
+F4,malware:Unknown,0.11796837545739655
+F4,hacking:Unknown + malware:Ransomware,0.05761639826739419
+F5,hacking:DoS,0.4045832581380717
+F5,malware:Ransomware,0.3446269271946154
+F5,hacking:Unknown + malware:Ransomware,0.05797212557457992
+F6,error:Publishing error,0.26336204838618976
+F6,physical:Theft,0.24662284918442084
+F6,error:Misdelivery,0.20847670159936355
+F7,misuse:Privilege abuse,0.6189475992780384
+F7,social:Bribery + misuse:Privilege abuse,0.07993322809994229
+F7,misuse:Data mishandling,0.059158773076240824
+F8,physical:Theft,0.5794127266467377
+F8,physical:Tampering,0.17451227522806848
+F8,physical:Skimmer,0.09605035947919029
+F9,error:Publishing error,0.2604148247733273
+F9,error:Disposal error,0.1293192101279344
+F9,error:Misdelivery,0.08348303399653113

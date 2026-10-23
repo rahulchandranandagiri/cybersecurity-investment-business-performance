@@ -1,0 +1,10 @@
+family,name,CIS v8 / NIST CSF 2.0
+F1,Identity & access management,CIS 5-6; PR.AA
+F2,Vulnerability & secure configuration,"CIS 4, 7, 16; ID.RA, PR.PS"
+F3,Email/web protection & awareness,"CIS 9, 14; PR.AT"
+F4,Malware defense & threat detection,"CIS 10, 13; DE.CM"
+F5,"Backup, recovery & resilience","CIS 11, 17; RC.RP, PR.IR"
+F6,Data protection & handling,CIS 3; PR.DS
+F7,Insider & privileged-activity monitoring,"CIS 6, 8; DE.CM"
+F8,Physical & asset security,CIS 1-2; PR.AA-06
+F9,Third-party & supply-chain risk,CIS 15; GV.SC

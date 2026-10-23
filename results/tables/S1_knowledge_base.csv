@@ -1,0 +1,26 @@
+rule,scope,condition,family/consequence
+R1,hacking,Use of stolen creds / brute force / credential stuffing,F1
+R2,hacking,"Exploit vuln, SQLi, XSS, forced browsing, abuse of functionality",F2
+R3,hacking,Backdoor or command-and-control use,F4
+R4,hacking,Denial of service,F5
+R5,hacking,Unknown variety via web application,F2
+R6,hacking,Unknown variety via remote access / desktop sharing / VPN,F1
+R7,hacking,Unknown variety via backdoor,F4
+R8,hacking,Unknown variety and vector,"F1, F2"
+R9,malware,Any malware,F4
+R10,malware,Ransomware or data destruction,F5
+R11,malware,"Delivered by e-mail or web (attachment, link, drive-by)",F3
+R12,malware,Remote injection,F2
+R13,social,Bribery of insiders only,F7
+R14,social,"Phishing, pretexting and other social engineering",F3
+R15,misuse,"Any insider misuse (privilege, possession, knowledge abuse)",F7
+R16,misuse,Data mishandling,F6
+R17,error,"Misconfiguration, programming error, malfunction",F2
+R18,error,"Misdelivery, publishing, disposal, loss and other handling errors",F6
+R19,physical,"Any physical action (theft, skimmer, tampering, snooping)",F8
+R20,physical,Theft of user devices or media (encryption gap),F6
+R21,environmental,"Fire, power failure, natural hazard",F5
+R22,actor,Partner actor or partner vector,F9
+C1,consequence,"Ransomware, destructive malware, DoS or environmental event",disrupt
+C2,consequence,"Hacking of server-side data stores, data-capturing malware, or misconfiguration/publishing of server data",mass
+C3,consequence,"Handling error (misdelivery, disposal, loss, gaffe), or physical or misuse action without hacking",contained
