@@ -7,6 +7,8 @@ A knowledge-based AI decision-support model evaluated on real-world incident dat
 **Read the paper: [paper/Manuscript.pdf](paper/Manuscript.pdf)** · supplementary material:
 [paper/Supplementary_Material.pdf](paper/Supplementary_Material.pdf) · all submission files: [paper/](paper)
 
+![Graphical abstract](results/figures/Graphical_abstract.png)
+
 KB-CIDS (Knowledge-Based Cybersecurity Investment Decision Support) asks a business question:
 *where should the next unit of cybersecurity budget go so that it removes the most
 business-impact risk?* It combines
@@ -22,6 +24,14 @@ business-impact risk?* It combines
 
 Everything is evaluated **out of time**: models are built on incidents up to 2016 and tested
 on incidents from 2017 onwards.
+
+## Highlights
+
+- Knowledge base maps 9,284 real incidents to nine cybersecurity control families
+- Knowledge features lift out-of-time material-impact prediction to AUC 0.891
+- Threat-count budgeting underperforms an equal split on business-impact risk
+- KB-CIDS beats equal and threat-count budgets in all 18 sector-size profiles
+- Impact alignment and recency drive gains; imputing unknown impacts does not
 
 ## Repository layout
 
@@ -102,4 +112,15 @@ allocation (0.599 without it); the manuscript reports and discusses this openly.
 * Data: VERIS Community Database (VCDB), Verizon RISK Team, https://github.com/vz-risk/VCDB,
   licensed CC BY-SA 4.0. Derived tables in `results/` are shared under the same licence.
 * Code: MIT License (see `LICENSE`).
-* Please cite the manuscript once published; until then cite this repository.
+* Please cite the manuscript once published; until then cite this repository:
+
+```bibtex
+@misc{nandagiri2026kbcids,
+  author       = {Nandagiri, Rahul Chandra},
+  title        = {Aligning cybersecurity investment with business-impact risk: A knowledge-based
+                  {AI} decision-support model evaluated on real-world incident data},
+  year         = {2026},
+  note         = {Short Communication submitted to Knowledge-Based Systems},
+  howpublished = {\url{https://github.com/rahulchandranandagiri/cybersecurity-investment-business-performance}}
+}
+```
