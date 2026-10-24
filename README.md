@@ -54,8 +54,9 @@ paper/
   Manuscript.pdf / .docx     the manuscript as submitted
   Supplementary_Material.*   supplementary tables S1-S10
   Highlights.*               journal highlights
-  submission/                cover letter and journal-compliance (readiness) report
-  build/                     scripts that build the Word files from results/ and check every number
+  Cover_Letter.*             cover letter to the editor
+  Submission_Readiness_Report.*  journal-compliance checklist and verification report
+  verify_manuscript.py       checks every number in the manuscript against results/
 data/                        VCDB archive is downloaded here (not committed)
 ```
 
@@ -67,6 +68,7 @@ source .venv/bin/activate            # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 python run_experiment.py             # about 7-10 minutes on a laptop CPU
 python run_experiment.py --quick     # fewer bootstrap draws, for a smoke test
+python paper/verify_manuscript.py    # checks every number in the paper against results/ (81 checks)
 ```
 
 The loader downloads `data/joined/vcdb.json.zip` from VCDB commit
