@@ -1,0 +1,11 @@
+{
+  "name": "kb-cids-manuscript-build",
+  "private": true,
+  "description": "Builds the KB-CIDS manuscript, supplementary material, highlights, cover letter and readiness report (Word) from the results in ../../results.",
+  "scripts": {
+    "build": "python3 export_tables.py && node build_manuscript.js && node build_extras.js && python3 verify.py && node build_report.js"
+  },
+  "dependencies": {
+    "docx": "9.8.1"
+  }
+}
