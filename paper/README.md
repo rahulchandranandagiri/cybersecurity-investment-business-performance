@@ -6,12 +6,14 @@ Rahul Chandra Nandagiri, Midwest University, Wentzville, Missouri, United States
 
 Short Communication submitted to *Knowledge-Based Systems* (Elsevier) on 24 October 2026.
 The files here are the submitted version (preprint), not a peer-reviewed or published version.
+They are set in a regular reading layout; the journal received the same text double-spaced
+with line numbers, the format used for peer review.
 
 **Read the paper: [Manuscript.pdf](Manuscript.pdf)**
 
 | File | Contents |
 |---|---|
-| [`Manuscript.pdf`](Manuscript.pdf) / [`.docx`](Manuscript.docx) | The paper (17 pages), as submitted |
+| [`Manuscript.pdf`](Manuscript.pdf) / [`.docx`](Manuscript.docx) | The paper (11 pages) |
 | [`Supplementary_Material.pdf`](Supplementary_Material.pdf) / `.docx` | Supplementary tables S1-S10 |
 | [`Highlights.pdf`](Highlights.pdf) / `.docx` | The five journal highlights |
 | [`Cover_Letter.pdf`](Cover_Letter.pdf) / `.docx` | Cover letter to the editor |
