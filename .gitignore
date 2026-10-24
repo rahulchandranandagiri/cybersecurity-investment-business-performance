@@ -13,5 +13,8 @@ venv/
 data/*
 !data/.gitkeep
 
+paper/build/out/
+node_modules/
+
 .DS_Store
 Thumbs.db

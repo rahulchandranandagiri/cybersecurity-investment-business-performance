@@ -2,7 +2,10 @@
 
 Reproducible code for the manuscript **"Aligning cybersecurity investment with business-impact risk:
 A knowledge-based AI decision-support model evaluated on real-world incident data"**
-(Short Communication prepared for *Knowledge-Based Systems*).
+(Short Communication submitted to *Knowledge-Based Systems*, October 2026).
+
+**Read the paper: [paper/Manuscript.pdf](paper/Manuscript.pdf)** · supplementary material:
+[paper/Supplementary_Material.pdf](paper/Supplementary_Material.pdf) · all submission files: [paper/](paper)
 
 KB-CIDS (Knowledge-Based Cybersecurity Investment Decision Support) asks a business question:
 *where should the next unit of cybersecurity budget go so that it removes the most
@@ -37,6 +40,12 @@ results/
   figures/                   Figure_1, Figure_2, Graphical_abstract (PNG 600 dpi + PDF)
   summary.json               every number quoted in the manuscript
   environment.json           library versions used for the reported run
+paper/
+  Manuscript.pdf / .docx     the manuscript as submitted
+  Supplementary_Material.*   supplementary tables S1-S10
+  Highlights.*               journal highlights
+  submission/                cover letter and journal-compliance (readiness) report
+  build/                     scripts that build the Word files from results/ and check every number
 data/                        VCDB archive is downloaded here (not committed)
 ```
 
